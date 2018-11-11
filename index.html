@@ -4,10 +4,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Crystal Collector</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <script src="assets/javascript/game.js"></script>
 </head>
 <body>
   <h1>Crystal Collectors!</h1>
@@ -22,12 +22,22 @@
   <br>
   <p>The object of the game is to have your score equal the random score exactly without going over.</p>
   <br>
-  <p>If you match the random number or go over it the game will restart with a new random number as well as new values for the crystals.</p>
+  <p>If you match the random number or go over it the game will restart with a new random number as well as new values for each of the crystals.</p>
   </div>
   <div id="randomNum">Random Number</div>
-  <div id="winLoss">Wins and Losses</div>
-  <div id="crystals">Crystals</div>  
-  <div id="score">Total Score</div>
-    <script src="assets/javascript/game.js"></script>
+  <div id="winLoss">
+      <p id="wins">Wins:</p>
+      <br>
+      <p id="losses">Losses:</p>
+  </div>
+  <div id="crystals">
+      <img class="crystal amethyst" alt="amethyst-pic" src="assets/images/amethyst.jpg">
+      <img class="crystal diamond" alt="diamond-pic" src="assets/images/diamond.png">
+      <img class="crystal quartz" alt="quartz-pic" src="assets/images/quartz.jpg">
+      <img class="crystal ruby" alt="ruby-pic" src="assets/images/Ruby.jpg">
+  </div>  
+  <div id="score">Total score:</div>
+    
+  <script src="assets/javascript/game.js"></script>
 </body>
 </html>
